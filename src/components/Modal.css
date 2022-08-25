@@ -1,0 +1,73 @@
+.modalOut {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modalIn {
+    width: 50%;
+    height: auto;
+    background-color: #353535;    
+    border-radius: 8px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: slideY 1s;
+}
+
+/* Animação subindo area input */
+@keyframes slideY{
+    from{
+        transform: translateY(-30px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
+
+.boxTxt {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: transparent;
+    color: #c5c5c5;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    padding: 20px;
+}
+
+.boxClose {
+    width: 100%;
+    height:auto;
+    background-color: transparent;    
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding: 10px;
+}
+
+.btnClose {
+    background-color: #c5c5c5;
+    color: #333;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    opacity: 1;
+}
+
+.btnClose:hover {
+    opacity: 0.7;
+}
